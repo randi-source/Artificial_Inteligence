@@ -1,0 +1,15 @@
+artifact_uri: file:///d:/Kuliah/semester_3/kecerdasan_buatan/Pertemuan_3/mlruns/202922130276860432/87fe55514cc84b12893646eccc15fc42/artifacts
+end_time: 1695442639133
+entry_point_name: ''
+experiment_id: '202922130276860432'
+lifecycle_stage: active
+run_id: 87fe55514cc84b12893646eccc15fc42
+run_name: iris_multiclass
+run_uuid: 87fe55514cc84b12893646eccc15fc42
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1695442627615
+status: 3
+tags: []
+user_id: PC
