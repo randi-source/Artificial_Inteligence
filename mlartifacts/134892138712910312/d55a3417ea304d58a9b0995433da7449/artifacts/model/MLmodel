@@ -1,0 +1,30 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.0
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.3.1
+mlflow_version: 2.7.1
+model_uuid: ec03748fb49443b0b796203101539b9f
+run_id: d55a3417ea304d58a9b0995433da7449
+signature:
+  inputs: '[{"type": "double", "name": "Days for shipment (scheduled)"}, {"type":
+    "double", "name": "Benefit per order"}, {"type": "double", "name": "Sales per
+    customer"}, {"type": "double", "name": "Order Item Discount"}, {"type": "double",
+    "name": "Order Item Discount Rate"}, {"type": "double", "name": "Order Item Product
+    Price"}, {"type": "double", "name": "Order Item Profit Ratio"}, {"type": "double",
+    "name": "Order Item Quantity"}, {"type": "double", "name": "Sales"}, {"type":
+    "double", "name": "Order Item Total"}, {"type": "double", "name": "Order Profit
+    Per Order"}, {"type": "double", "name": "Product Price"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2023-10-14 09:20:31.823693'

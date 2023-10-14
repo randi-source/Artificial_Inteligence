@@ -1,0 +1,13 @@
+aliases: []
+creation_timestamp: 1697275455768
+current_stage: None
+description: ''
+last_updated_timestamp: 1697275455768
+name: OrderDelivery
+run_id: 3a396d499e944c769d4f4b1ab31b85b5
+run_link: ''
+source: mlflow-artifacts:/134892138712910312/3a396d499e944c769d4f4b1ab31b85b5/artifacts/model
+status: READY
+status_message: null
+user_id: null
+version: 5
