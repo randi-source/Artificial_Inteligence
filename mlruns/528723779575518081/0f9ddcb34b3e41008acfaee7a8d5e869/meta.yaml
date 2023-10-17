@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/528723779575518081/0f9ddcb34b3e41008acfaee7a8d5e869/artifacts
+deleted_time: 1697550558330
+end_time: 1697549615156
+entry_point_name: ''
+experiment_id: '528723779575518081'
+lifecycle_stage: deleted
+run_id: 0f9ddcb34b3e41008acfaee7a8d5e869
+run_name: learned-tern-845
+run_uuid: 0f9ddcb34b3e41008acfaee7a8d5e869
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697549614874
+status: 4
+tags: []
+user_id: randi_eka

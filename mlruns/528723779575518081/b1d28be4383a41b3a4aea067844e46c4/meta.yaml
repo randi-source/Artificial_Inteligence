@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/528723779575518081/b1d28be4383a41b3a4aea067844e46c4/artifacts
+deleted_time: 1697550558330
+end_time: 1697549595462
+entry_point_name: ''
+experiment_id: '528723779575518081'
+lifecycle_stage: deleted
+run_id: b1d28be4383a41b3a4aea067844e46c4
+run_name: learned-wolf-15
+run_uuid: b1d28be4383a41b3a4aea067844e46c4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697549594904
+status: 4
+tags: []
+user_id: randi_eka

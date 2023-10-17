@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/528723779575518081/8843917ed58f4b15beba536a98e1e5e9/artifacts
+deleted_time: 1697553086062
+end_time: 1697552047579
+entry_point_name: ''
+experiment_id: '528723779575518081'
+lifecycle_stage: deleted
+run_id: 8843917ed58f4b15beba536a98e1e5e9
+run_name: ann_base
+run_uuid: 8843917ed58f4b15beba536a98e1e5e9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697552041781
+status: 3
+tags: []
+user_id: randi_eka
