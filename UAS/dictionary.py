@@ -19,5 +19,13 @@ classification_dict = {
                 'amazon aurora', 'firebase', 'airtable', 'ibm informix', 'vertica', 'greenplum', 'snowflake', 'sap hana', 'clickhouse', 'cockroachdb', 'firebird', 'interbase', 
                 'mimer sql', 'nuodb', 'percona', 'pervasive psql', 'r:base', 'rasdaman', 'realm', 'sap iq', 'sap adaptive server', 'soliddb', 'splice machine', 'sqream db', 
                 'timescale db', 'yugabytedb'],
-    'cloud platform': ['aws', 'gcp', 'azure', 'ibm', 'alibaba', 'oracle', 'sap']
+    'cloud platform': ['aws', 'gcp', 'azure', 'ibm', 'alibaba', 'oracle', 'sap'],
+    'statistics': ['mean', 'median', 'mode', 'range', 'standard deviation', 'variance', 'quartile', 'interquartile range',
+    'probability', 'random variable', 'probability distribution', 'probability density function', 'cumulative distribution function', 'expected value', 'variance', 'independence',
+    'hypothesis testing', 'confidence interval', 'p value', 'null hypothesis', 'alternative hypothesis', 'regression analysis', 'correlation', 'anova',
+    'simple random sampling', 'stratified random sampling', 'cluster sampling', 'systematic sampling', 'sampling error', 'sampling bias', 'sample size',
+    'data cleaning', 'data transformation', 'data normalization', 'outlier detection', 'feature engineering', 'dimensionality reduction', 'data visualization',
+    'experimental group', 'control group', 'randomized controlled trial', 'cross sectional study', 'longitudinal study', 'observational study', 'confounding variable',
+    't test', 'chi squared test', 'anova', 'mann whitney u test', 'wilcoxon signed rank test', 'kruskal wallis test', 'fisher exact test',
+    'bayesian inference', 'prior probability', 'posterior probability', 'bayesian network', 'markov chain monte carlo', 'bayesian credibility interval', 'bayesian updating']
 }

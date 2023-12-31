@@ -5,6 +5,7 @@ import nltk
 import requests
 from bs4 import BeautifulSoup
 import math
+import time
 
 from nltk.tokenize import word_tokenize
 from langdetect import detect
@@ -40,6 +41,7 @@ def scrape_linkedin_jobs(number_of_jobs, exact_match):
         for x in range(0,len(alljobs_on_this_page)):
             jobid = alljobs_on_this_page[x].find("div",{"class":"base-card"}).get('data-entity-urn').split(":")[3]
             l.append(jobid)
+        time.sleep(1)
 
     target_url='https://www.linkedin.com/jobs-guest/jobs/api/jobPosting/{}'
 
@@ -144,19 +146,18 @@ def to_timedelta(s):
     elif 'month' in units[1]:
         return pd.to_timedelta(int(units[0])*30, unit='d')
 
-def add_posting_date(df, scraping_date_str):
+def add_posting_date(df):
     df['timedelta'] = df['job_posting_time'].apply(to_timedelta)
-    scraping_date = datetime.strptime(scraping_date_str, '%d %B %Y')
+    scraping_date = datetime.today()
     df['posting_date'] = scraping_date - df['timedelta']
     df = df.drop("timedelta", axis=1)
     return df
-
 
 def create_ngrams(df, column, n):
     return df[column].apply(lambda row: list(ngrams(row, n)))
 
 
-def process_dataframe(df, scraping_date_str):
+def process_dataframe(df):
     df = replace_description(df)
     df = add_language(df)
     df = filter_language(df)
@@ -164,7 +165,7 @@ def process_dataframe(df, scraping_date_str):
     df = tokenize(df)
     df = remove_stopwords(df)
     df = lemmatize(df)
-    df = add_posting_date(df, scraping_date_str)
+    df = add_posting_date(df)
     df['job_description_bigram'] = create_ngrams(df, 'job_description_prep', 2)
     df.rename(columns={"job_description_prep":"job_description_unigram"}, inplace=True)
     return df
